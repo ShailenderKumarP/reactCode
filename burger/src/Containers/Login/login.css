@@ -1,0 +1,100 @@
+#body-background {
+  height: 98.9%;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  /* background-image: url("Images/mainBackground.jpg"); */
+  background-size: cover;
+  background-color: black;
+}
+.loginForm {
+  position: absolute;
+  top: 38%;
+  left: 23%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  padding: 40px;
+  /*background: rgba(0, 0, 0, 0.8);*/
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.loginForm h4 {
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 24px;
+}
+.loginForm .inputGrp {
+  position: relative;
+}
+.loginForm input {
+  outline: none;
+  border: none;
+  background: transparent;
+  padding-top: 13px;
+  font-size: 16px;
+  color: #fff;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.loginForm label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  padding: 10px 0;
+  font-size: 16px;
+  transition: 0.5s;
+  text-transform: capitalize;
+}
+.loginForm input:focus ~ label,
+.loginForm input:valid ~ label,
+.loginForm input.invalid ~ label {
+  top: -22px;
+  color: #03a9f4;
+}
+.loginForm input:not([type="submit"]):focus {
+  border-bottom: 1px solid white;
+}
+
+.loginForm input.invalid {
+  border-bottom: 1px solid red !important;
+}
+
+.loginForm #login {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 7px;
+  margin-left: 126px;
+}
+.loginForm #login:hover {
+  border: 1px solid #03a9f4;
+  color: #03a9f4;
+}
+
+.loginForm .errors {
+  color: red;
+  text-align: center;
+  margin-top: 6px;
+}
+
+.signInPasswordImg {
+  width: 25px;
+  filter: invert(1);
+  position: absolute;
+  top: 15px;
+  left: 320px;
+}
+
+.signInHidePasswordImg {
+  height: 12px;
+}
+
+.signInShowPasswordImg {
+  height: 15px;
+}

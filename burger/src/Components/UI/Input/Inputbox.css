@@ -1,0 +1,16 @@
+.customInput,
+.customInput:focus {
+  border: none;
+  border-bottom: 1.4px solid #1c3468;
+  outline: none;
+  background: transparent;
+}
+
+.customInput.invalid {
+  border: 1px solid red;
+  box-shadow: inset 0px 0px 2px red;
+}
+
+.customInput {
+  padding-left: 2px;
+}

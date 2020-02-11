@@ -1,0 +1,64 @@
+.burgerLayout {
+  text-align: center;
+}
+
+.burger-bread-top,
+.burger-bread-bottom {
+  background-color: brown;
+  width: 230px;
+  margin: auto;
+  height: 25px;
+}
+.burger-bread-top {
+  border-top-right-radius: 45px;
+  border-top-left-radius: 45px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.burger-bread-bottom {
+  border-bottom-right-radius: 45px;
+  border-bottom-left-radius: 45px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.burger-salad {
+  background-color: #01a708e8;
+  width: 200px;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  height: 14px;
+}
+
+.burger-becon {
+  background-color: black;
+  width: 200px;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  height: 10px;
+}
+
+.burger-cheese {
+  background-color: #e9b94ad6;
+  width: 200px;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  height: 6px;
+}
+
+.burger-meat {
+  background-color: #d90000d6;
+  width: 200px;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  height: 17px;
+}

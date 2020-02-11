@@ -1,0 +1,27 @@
+.cardPayment {
+  padding-left: 4%;
+  padding-top: 3%;
+}
+
+.cardBackground {
+  content: "Card";
+}
+
+.cardPayment img.acceptedCards {
+  height: 10px;
+  float: right;
+  margin-top: 25px;
+}
+
+.cardPayment #cardModel {
+  height: 110px;
+  background-color: lightblue;
+  background-image: linear-gradient(to bottom right, lightgray, lightblue);
+  width: 60%;
+  border-radius: 9px;
+  padding: 2%;
+}
+
+.cardPayment .payBtn {
+  margin-left: 25%;
+}

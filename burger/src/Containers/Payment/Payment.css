@@ -1,0 +1,48 @@
+.payment {
+  box-shadow: 0 4px 7px 0 rgba(218, 220, 230, 0.6);
+  margin-left: 5%;
+  width: 40%;
+  margin-top: 3%;
+  padding-bottom: 0px;
+  border-radius: 10px;
+}
+.payment h5 {
+  color: white;
+  background-color: #1c3468;
+}
+.payment .paymentMethods {
+  float: left;
+  width: 30%;
+  background-color: #e7eef8;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+.payment .paymentMethods ul {
+  margin-block-start: 0px;
+  padding-inline-start: 0px;
+  margin-block-end: 0px;
+}
+
+.payment .paymentMethods ul li:not(.selectedPaymentMethod):hover {
+  font-weight: bolder;
+  font-size: 16px;
+}
+
+.payment .paymentMethodDescription {
+  float: right;
+  width: 68%;
+}
+
+.payment .paymentOption {
+  list-style-type: none;
+  padding: 9%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  cursor: pointer;
+}
+
+.payment .selectedPaymentMethod {
+  background-color: white;
+  font-size: 20px;
+}
