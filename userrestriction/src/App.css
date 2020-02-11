@@ -1,0 +1,220 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+body.dark {
+  background-color: black;
+  color: white;
+}
+body.light {
+  background-color: white;
+  color: black;
+}
+
+.LightTheme {
+  background-color: white;
+  color: black;
+  border-radius: 32px;
+  text-align: center;
+  padding-top: 6px;
+  margin-top: -3px;
+  height: 37px;
+  margin-right: 46px;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 96px;
+}
+
+.lightThemeBtn {
+  height: 26px;
+  width: 26px;
+  border-radius: 18px;
+  background-color: black;
+  border: black;
+  float: left;
+  margin-left: -7px;
+}
+
+.lightThemeBtn:focus,
+.darkThemeBtn:focus {
+  outline: none !important;
+}
+
+.lightLabel {
+  font-size: 18px;
+  float: right;
+  margin-top: -1px;
+}
+
+.darkTheme {
+  background-color: black;
+  color: white;
+  border-radius: 32px;
+  text-align: center;
+  padding-top: 6px;
+  margin-top: -3px;
+  height: 37px;
+  margin-right: 46px;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 96px;
+}
+
+.darkThemeBtn {
+  height: 26px;
+  width: 26px;
+  border-radius: 18px;
+  background-color: white;
+  border: white;
+  float: right;
+  margin-right: -9px;
+}
+
+.darkLabel {
+  font-size: 18px;
+  float: left;
+  margin-top: -1px;
+}
+
+.lightThemeImg {
+  filter: invert(100%);
+}
+
+.darkThemeImg {
+  filter: invert(0%);
+}
+
+.tableProps {
+  overflow-y: auto;
+  height: 392px;
+}
+.wid100px {
+  width: 100px;
+}
+
+.tableProps {
+  margin-top: 5%;
+}
+
+.userDropDown {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.navLightTheme {
+  background-color: black;
+}
+
+.navDarkTheme {
+  background-color: white;
+}
+
+input[type="checkbox"] {
+  margin-top: -30px;
+}
+
+input[type="checkbox"] {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeSpeed;
+  width: 13px;
+  height: 11px;
+  margin: 0;
+  margin-right: 4px;
+  position: relative;
+  cursor: pointer;
+  top: -1px;
+}
+
+.dark input[type="checkbox"]:after {
+  content: "";
+  text-align: center;
+  vertical-align: middle;
+  line-height: 13px;
+  position: absolute;
+  cursor: pointer;
+  height: 13px;
+  width: 14px;
+  left: 0;
+  top: 0;
+  font-size: 10px;
+  background: white;
+}
+.light input[type="checkbox"]:after {
+  content: "";
+  text-align: center;
+  vertical-align: middle;
+  line-height: 13px;
+  position: absolute;
+  cursor: pointer;
+  height: 13px;
+  width: 14px;
+  left: 0;
+  top: 0;
+  font-size: 10px;
+  background: white;
+  border: 1px solid blue;
+}
+
+input[type="checkbox"]:hover:after,
+input[type="checkbox"]:checked:hover:after {
+  background: rgb(78, 147, 202);
+  color: white;
+  content: "\2714";
+  outline: none !important;
+  transition: background 0.3s ease-in;
+}
+
+input[type="checkbox"]:checked:after {
+  background: rgb(78, 147, 202);
+  content: "\2714";
+  color: white;
+  outline: none !important;
+  border: none;
+}
+input[type="checkbox"]:checked {
+  outline: none !important;
+  border: none;
+}
+
+input[type="checkbox"]:disabled:after,
+input[type="checkbox"]:disabled:checked:hover:after {
+  background: lightgrey !important;
+  content: "";
+  color: black;
+  border: none;
+}
+input[type="checkbox"]:disabled:checked:after,
+input[type="checkbox"]:disabled:checked:hover:after {
+  content: "\2714";
+  border: none;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

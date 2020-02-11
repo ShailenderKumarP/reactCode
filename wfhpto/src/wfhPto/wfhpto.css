@@ -1,0 +1,116 @@
+input[type="radio"] {
+  opacity: 0;
+  position: relative;
+  right: -9px;
+  height: 30px;
+  width: 30px;
+}
+
+input[type="radio"] + label {
+  background-size: 30px;
+  height: 30px;
+  width: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+  margin-left: -22px;
+}
+input[type="radio"] + label.wfhImg {
+  background-image: url(Images/wfh1.png);
+  /* filter: invert(100%); */
+}
+input[type="radio"] + label.ptoImg {
+  background-image: url(Images/pto2.png);
+}
+
+input[type="radio"]:checked + label {
+  filter: opacity(40%);
+}
+input[type="radio"]:checked + label + .labelName,
+.status-value {
+  color: chartreuse;
+}
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  /* margin-left: 1em; */
+  margin-top: 0.3em;
+  border: 2px solid rgb(236, 166, 26);
+  background-color: white;
+}
+
+.width50 {
+  width: 50%;
+}
+
+.card1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  background: linear-gradient(
+    155deg,
+    #020024 0%,
+    red 0%,
+    #ffab00 12%,
+    #e0ff00 24%,
+    #00ff08 36%,
+    #00e4ff 48%,
+    #0005ff 60%,
+    #fe00e7 72%,
+    red 84%,
+    #ffa200 96%
+  );
+  width: 19.7em;
+  /* animation: gradient-anim 15s linear infinite; */
+  margin-left: 3%;
+  margin-top: 3%;
+  height: 7.6em;
+}
+.card1::before {
+  filter: blur(8px);
+  background: inherit;
+  position: absolute;
+  content: " ";
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.innerCard {
+  background: black;
+  color: white;
+  width: 19.5em;
+  top: 0.7%;
+  left: 0.7%;
+  position: absolute;
+  height: 7.5em;
+}
+body {
+  /* background-image: url("Images/background.jpg"); */
+  background-color: #0b1919;
+}
+.labelName {
+  float: right;
+  margin-top: 5px;
+}
+.Wfh-Btn {
+  margin-top: 7px;
+}
+.Wfh-Btn,
+.Pto-Btn {
+  width: 70%;
+}
+@keyframes gradient-anim {
+  0% {
+    /* background-position: 0 0; */
+  }
+  50% {
+    background-position: 18.75em 31.25em;
+  }
+  100% {
+    background-position: 0.1em 0.1em;
+  }
+}
